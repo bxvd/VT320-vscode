@@ -8,7 +8,7 @@ const diff = require('semver/functions/diff');
  */
 function activate(context) {
 
-	this.extensionName = 'bxvd.vt320-vscode';
+	this.extensionName = 'bxvd.vt320';
 	this.cntx = context;
 	this.extension = vscode.extensions.getExtension(this.extensionName);
 

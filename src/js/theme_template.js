@@ -57,7 +57,7 @@
       for(let mutation of mutationsList) {
           if (mutation.type === 'attributes') {
             // only init if we're using a Synthwave 84 subtheme
-            const isUsingVT320 = document.querySelector('[class*="bxvd-vt320-vscode-themes"]');
+            const isUsingVT320 = document.querySelector('[class*="bxvd-vt320-themes"]');
             // does the style div exist yet?
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
             // does it have content ?
@@ -70,7 +70,7 @@
             }
           }
           if (mutation.type === 'childList') {
-            const isUsingVT320= document.querySelector('[class*="bxvd-vt320-vscode-themes"]');
+            const isUsingVT320= document.querySelector('[class*="bxvd-vt320-themes"]');
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
             const tokenStyles = document.querySelector('.vscode-tokens-styles').innerText;
 
