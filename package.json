@@ -1,5 +1,5 @@
 {
-    "name": "vt320",
+    "name": "vt320-vscode",
     "displayName": "VT320",
     "description": "A theme inspired by the VT320 terminal's amber glow",
     "version": "0.1.0",
@@ -56,7 +56,7 @@
                 },
                 "vt320.disableGlow": {
                     "type": "boolean",
-                    "default": false,
+                    "default": true,
                     "description": "Disable the glow effect"
                 }
             }
