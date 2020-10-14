@@ -1,65 +1,63 @@
 {
-    "name": "synthwave-vscode",
-    "displayName": "SynthWave '84",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
-    "version": "0.1.8",
-    "author": "Robb Owen",
-    "publisher": "RobbOwen",
+    "name": "vt320-vscode",
+    "displayName": "VT320",
+    "description": "A theme inspired by the VT320 terminal's amber glow",
+    "version": "0.0.1",
+    "author": "bxvd",
+    "publisher": "bxvd",
+    "license": "MIT",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/synthwave-vscode"
+        "url": "https://github.com/bxvd/VT320-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
     },
     "keywords": [
+        "terminal",
+        "glow",
         "retro",
-        "80s"
+        "vt320"
     ],
     "categories": [
         "Themes"
     ],
     "activationEvents": [
         "*",
-        "onCommand:synthwave84.enableNeon",
-        "onCommand:synthwave84.whatsNew"
+        "onCommand:vt320.enableGlow"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "VT320",
                 "uiTheme": "vs-dark",
-                "path": "./themes/synthwave-color-theme.json"
+                "path": "./themes/vt320-color-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "synthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
+                "command": "vt320.enableGlow",
+                "title": "VT320: Enable Glow"
             },
             {
-                "command": "synthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
-            },
-            {
-                "command": "synthwave84.whatsNew",
-                "title": "Synthwave '84: What's New"
+                "command": "vt320.disableGlow",
+                "title": "VT320: Disable Glow"
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "VT320",
             "properties": {
-                "synthwave84.brightness": {
+                "vt320.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "synthwave84.disableGlow": {
+                "vt320.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect"
                 }
             }
         }
