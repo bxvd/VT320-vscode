@@ -16,20 +16,24 @@
     var updatedThemeStyles = initialThemeStyles;
     
     if (!disableGlow) {
-      /* replace neon red */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #fe4450;/g, "color: #fff5f6; text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c[GLOW_BRIGHTNESS], 0 0 5px #fc1f2c[GLOW_BRIGHTNESS], 0 0 25px #fc1f2c[GLOW_BRIGHTNESS];");
       
-      /* replace neon pink */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #ff7edb;/g, "color: #f92aad; text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;");
+      // Bold amber block
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ffc039;/g, "color: #4d4d4d; background-color: #ffc039; box-shadow: 0 0 10px #FFB000; font-weight: bold;");
+
+      // Bold amber
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ffcd61;/g, "font-weight: bold; text-shadow: 0 0 10px #FFB000, 0 0 10px #FFB00055;");
+
+      // Amber
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ffcd60;/g, "text-shadow: 0 0 10px #FFB000, 0 0 10px #FFB00055;");
+
+      // Light amber
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ffe683;/g, "text-shadow: 0 0 10px #FFB000, 0 0 10px #FFB00055;");
       
-      /* replace yellow */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #fede5d;/g, "color: #f4eee4; text-shadow: 0 0 2px #393a33, 0 0 8px #f39f05[GLOW_BRIGHTNESS], 0 0 2px #f39f05[GLOW_BRIGHTNESS];");
+      // Grey
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #888888;/g, "text-shadow: 0 0 10px #888;");
       
-      /* replace green */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #72f1b8;/g, "color: #72f1b8; text-shadow: 0 0 2px #100c0f, 0 0 10px #257c55[GLOW_BRIGHTNESS], 0 0 35px #212724[GLOW_BRIGHTNESS];");
-      
-      /* replace blue */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #36f9f6;/g, "color: #fdfdfd; text-shadow: 0 0 2px #001716, 0 0 3px #03edf9[GLOW_BRIGHTNESS], 0 0 5px #03edf9[GLOW_BRIGHTNESS], 0 0 8px #03edf9[GLOW_BRIGHTNESS];");
+      // White
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ffffff;/g, "text-shadow: 0 0 10px #fff, 0 0 10px #ffffff55;");
     }
 
     /* append the remaining styles */

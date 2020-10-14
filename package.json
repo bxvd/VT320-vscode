@@ -2,7 +2,7 @@
     "name": "vt320-vscode",
     "displayName": "VT320",
     "description": "A theme inspired by the VT320 terminal's amber glow",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "author": "bxvd",
     "publisher": "bxvd",
     "license": "MIT",
